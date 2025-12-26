@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="lado_esquerdo">
+            <div id="titulo">
+                Lista de tarefas
+            </div>
+         
+            <form id="itens">
+                <div id="cima-esquerdo">
+                <div id="fundo-prioridade">
+                Grau de prioridade: 
+                <select name="grau-prioridade" id="prioridade">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                </div>
+                <input type="datetime-local">
+                </div>
+                <div id="baixo-esquerdo">
+                <input type="text" placeholder="Digite a tarefa..." id="tarefa">
+                <button type="submit" id="enviar">Adicionar Tarefa</button>
+                </div>
+            </form>
+   
+        </div>
+        <div id="lado_direito">
+            
+        </div>
+    </div>
+</body>
+</html>
