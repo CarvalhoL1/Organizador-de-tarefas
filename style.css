@@ -32,6 +32,7 @@ body{
     
 }
 #lado_direito{
+        overflow-y: auto;
     border: 0.6rem solid rgb(80, 19, 19);
     background-color: rgb(193, 175, 131);
     width: 30rem;
@@ -97,16 +98,30 @@ h1{
 
 }
 #tarefa_direito{
-    
+
     margin-left: 3rem;
     margin-top: 2rem;
     
 }
 .bloco-tarefa{
-    width: 18rem;
+    width: 23rem;
     margin-top: 2rem;
     height: 5rem;
     background-color: beige;
     border-radius: 4rem;
     padding: 3px;
+}
+.prioridade-direito{
+    margin-left: 1rem;
+}
+.conteudo{
+    font-size: large;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+.apagar{
+    float: right;
+    margin-right: 2rem;
+    background-color: transparent;
+    border: none;
 }
