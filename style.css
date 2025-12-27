@@ -97,9 +97,16 @@ h1{
 
 }
 #tarefa_direito{
-    width: 18rem;
-    height: 5rem;
+    
     margin-left: 3rem;
     margin-top: 2rem;
+    
+}
+.bloco-tarefa{
+    width: 18rem;
+    margin-top: 2rem;
+    height: 5rem;
     background-color: beige;
+    border-radius: 4rem;
+    padding: 3px;
 }

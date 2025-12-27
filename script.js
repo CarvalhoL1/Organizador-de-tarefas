@@ -1,6 +1,15 @@
 function inserir_tarefa(){
 event.preventDefault();
-document.getElementById('conteudo').innerHTML = document.getElementById('tarefa').value
-document.getElementById('prioridade-direito').innerHTML = document.getElementById('prioridade').value
-document.getElementById('data').innerHTML = document.getElementById('inserir_data').value
+const conteudo = document.getElementById('tarefa').value
+const prioridade = document.getElementById('prioridade').value
+const data = document.getElementById('inserir_data').value
+
+const lista = document.createElement("div")
+lista.classList.add("bloco-tarefa")
+lista.innerHTML = `
+    <div class="prioridade-direito">Prioridade: ${prioridade}</div>
+    <div class="conteudo">${conteudo}</div>
+    <div class="data">${data}</div>
+    `
+document.getElementById('tarefa_direito').appendChild(lista)
 }
