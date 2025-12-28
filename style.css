@@ -115,7 +115,8 @@ h1{
     margin-top: 2rem;
 }
 .bloco-tarefa{
-    width: 23rem;
+    width: fit-content;
+    min-width: 23rem;
     margin-top: 2rem;
     height: 5rem;
     background-color: beige;
