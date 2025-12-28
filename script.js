@@ -8,9 +8,14 @@ let dia = ""
 let hora = ""
 if(!isNaN(data.getTime())){
 dia = "Dia: " + data.toLocaleDateString();
-hora = "as " + data.toLocaleTimeString();
+hora = "as " + data.toLocaleTimeString('pt-br', {hour: '2-digit', minute: '2-digit'});
 }
 const lista = document.createElement("div")
+if(!conteudo){
+    document.querySelector('.alerta').innerHTML = `Você não digitou a tarefa!`
+}
+else{
+document.querySelector('.alerta').innerHTML = ``
 lista.classList.add("bloco-tarefa")
 lista.innerHTML = `
     <button onclick="apagar(this)" class="apagar"><i class="fa-solid fa-delete-left"></i></button>
@@ -18,6 +23,7 @@ lista.innerHTML = `
     <div class="prioridade-direito">Prioridade: ${prioridade}</div>
     <div class="data">${dia} ${hora}</div>
     `
+}
 lista.dataset.prioridade = prioridade
 const container = document.getElementById('tarefa_direito')
 document.getElementById('tarefa_direito').appendChild(lista)
