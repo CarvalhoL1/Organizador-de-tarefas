@@ -34,7 +34,7 @@ body{
     
 }
 #lado_direito{
-    overflow-y: auto;
+    overflow: hidden;
     border: none;
     background-image: linear-gradient(rgb(138, 123, 83), rgba(236, 163, 111, 0.501));
     width: 30rem;
@@ -63,6 +63,7 @@ body{
     font-size: 2rem;
     display: flex;
     justify-content: center;
+    
 }
 #prioridade{
     border-radius: 5px;
@@ -96,11 +97,17 @@ body{
     align-items: center;
 }
 h1{
+    height: 3rem;
     background-color: beige;
 
 }
+.container-menor{
+    overflow-y: auto;
+    width: auto;
+    height: 27rem;
+}
 #tarefa_direito{
-
+    
     margin-left: 3rem;
     margin-top: 2rem;
     
