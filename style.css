@@ -33,7 +33,7 @@ body{
     max-width: 30rem;
     height: auto;
     min-height: 10rem;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
     
 }
@@ -45,7 +45,7 @@ body{
     max-width: 30rem;
     height: auto;
     min-height: 10rem;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 
 }
@@ -111,6 +111,7 @@ body{
 h1{
     height: 3rem;
     background-color: rgb(223, 237, 255);
+    text-align: center;
     
 }
 .container-menor{
