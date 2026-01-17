@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&family=Tektur:wght@400..900&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=DM+Serif+Text:ital@0;1&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
-    font-family: "Story Script", sans-serif;
+    font-family: "Averia Gruesa Libre", system-ui;
     font-weight: 400;
 }
 body{
@@ -21,7 +21,6 @@ body{
     height: auto;
     border-radius: 15px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2.6rem;
@@ -62,11 +61,14 @@ body{
     width: 12rem;
     height: 2rem;
     background-color: rgb(223, 237, 255);
-    border-radius: 18px;
+    border-radius: 8px;
     border: transparent;
+    padding-left: 15px;
+}
+#tarefa:focus{
+    outline: none;
 }
 #titulo{
-    
     font-size: 2rem;
     display: flex;
     justify-content: center;
@@ -84,21 +86,22 @@ body{
     outline: none;
 }
 #enviar{
-    width: auto;
-    background-color: rgb(223, 237, 255);
-    border-radius: 10px;
+   font-size: 3rem;
+   background-color: transparent;
     border: transparent;
 }
 #inserir_data{
     background-color: rgb(223, 237, 255);
     width: 9rem;
     border: transparent;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 #fundo-prioridade{
     width: auto;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: rgb(223, 237, 255);
+    text-align: center;
+    padding-left: 5px;
 }
 #cima-esquerdo, #baixo-esquerdo{
     display: flex;
