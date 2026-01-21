@@ -5,14 +5,32 @@
     font-family: "Averia Gruesa Libre", system-ui;
     font-weight: 400;
 }
+:root{
+  --bg: linear-gradient(180deg, rgb(243, 243, 243), rgb(233, 233, 233));
+  --bgbutton: black;
+  --fontColor: #111;
+  --cardcolor: rgb(223, 237, 255);
+}
 body{
-    background: linear-gradient(180deg, rgb(86, 83, 138), rgba(36, 56, 167, 0.501));
+    background: var(--bg);
     background-position: center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+}
+.cor{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fontColor);
+    background-color: var(--bgbutton);
+    border-radius: 100%;
+    font-size: 100px;
+    padding: 1.5rem;
 }
 #container{
     width: 90%;
@@ -60,7 +78,7 @@ body{
 #tarefa{
     width: 12rem;
     height: 2rem;
-    background-color: rgb(223, 237, 255);
+    background-color: var(--cardcolor);
     border-radius: 8px;
     border: transparent;
     padding-left: 15px;
@@ -70,9 +88,10 @@ body{
 }
 #titulo{
     font-size: 2rem;
+    color: var(--fontColor);
     display: flex;
     justify-content: center;
-    background-color: rgb(223, 237, 255);
+    background-color: var(--cardcolor);
     height: auto;
     width: auto;
 }
@@ -91,7 +110,8 @@ body{
     border: transparent;
 }
 #inserir_data{
-    background-color: rgb(223, 237, 255);
+    background-color: var(--cardcolor);
+    color: var(--fontColor);
     width: 9rem;
     border: transparent;
     border-radius: 5px;
@@ -99,7 +119,8 @@ body{
 #fundo-prioridade{
     width: auto;
     border-radius: 5px;
-    background-color: rgb(223, 237, 255);
+    background-color: var(--cardcolor);
+    color: var(--fontColor);
     text-align: center;
     padding-left: 5px;
 }
@@ -109,8 +130,9 @@ body{
     align-items: center;
 }
 h1{
+    color: var(--fontColor);
     height: 3rem;
-    background-color: rgb(223, 237, 255);
+    background-color: var(--cardcolor);
     text-align: center;
     
 }
@@ -129,7 +151,8 @@ h1{
     min-width: 81%;
     margin-top: 2rem;
     height: 5rem;
-    background-color: rgb(223, 237, 255);
+    background-color: var(--cardcolor);
+    color: var(--fontColor);
     border-radius: 2rem;
     padding: 3px;
 }
@@ -155,4 +178,16 @@ h1{
         flex-direction: column;
         gap: 1.5rem;
     }
+}
+.tema-claro{
+    --bg: linear-gradient(180deg, #f4f6f8, rgb(203, 214, 218));
+    --bgbutton: black;
+    --fontColor: rgb(223, 237, 255);
+    --cardcolor: rgb(57, 58, 60);
+}
+.tema-escuro{
+    --bg: linear-gradient(180deg, rgb(46, 46, 46), rgb(56, 55, 55));
+    --bgbutton: white;
+    --fontColor: rgb(57, 58, 60);
+    --cardcolor: rgb(223, 237, 255);
 }

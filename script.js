@@ -83,3 +83,20 @@ window.onload = () => {
   const blocos = Array.from(container.children);
   blocos.sort(ordenar).forEach(bloco => container.appendChild(bloco));
 };
+const cor = document.querySelector(".cor");
+cor.addEventListener('click', function() {
+  document.body.classList.toggle("tema-escuro");
+  document.body.classList.toggle("tema-claro");
+  if (document.body.classList.contains('tema-escuro')){
+  cor.innerHTML = `<i class="fa-solid fa-sun"></i>`
+}
+else if (document.body.classList.contains('tema-claro')){
+  cor.innerHTML = `<i class="fa-solid fa-moon"></i>`
+}
+});
+if (document.body.classList.contains('tema-escuro')){
+  cor.innerHTML = `<i class="fa-solid fa-sun"></i>`
+}
+else if (document.body.classList.contains('tema-claro')){
+  cor.innerHTML = `<i class="fa-solid fa-moon"></i>`
+}
